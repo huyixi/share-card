@@ -43,7 +43,7 @@ export default function Home() {
           {text || "Preview Text"}
         </div>
         <Textarea value={text} onChange={(e) => setText(e.target.value)}></Textarea>
-        <Button onClick={exportAsImage}>Export as {imageFormat}</Button>
+        <Button onClick={exportAsImage}>Export</Button>
         <Select onValueChange={setImageFormat}>
           <SelectTrigger>
             <SelectValue placeholder="Image Format"></SelectValue>
